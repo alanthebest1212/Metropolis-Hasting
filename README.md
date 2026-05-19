@@ -8,10 +8,14 @@ def NormalD(x):
     return np.exp(-0.5*((x**2) / (1.0**2)))
 
 then make such object
+
 N_rv = MetropolisHasting(NormalD) // since no range constrant or any other constrant
 
 then make the sample
+
 initial_state = [0] // all in arrays, with multiple coordinate for multi-dimensions
+
+
 samples = N_rv.sampler([0], 3000) // will give an array of 3000 points
                                   // following the given distribution
 
