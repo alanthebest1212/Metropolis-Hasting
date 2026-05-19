@@ -45,11 +45,15 @@ likelihood: flipping the coin 10 times: 6 heads, 4 tails.
 we want chance of head
 So posterior will follow ~ Beta(7,5)
 using a random trial of 30000 sample size, we have
+
 mean = 0.5838238859633782
+
 variance = 0.01843491328875613
 
 compare to its true value
+
 true mean = 7/12, about 0.583
+
 true variance = 35/1872 about 0.0187
 
 
