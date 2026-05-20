@@ -36,14 +36,6 @@ class MetropolisHasting:
             if step >= burn_in:
                 samples.append(current_state.copy())
         return np.array(samples)
-    
 
-def example(x):
-    return x[0]**6*(1-x[0])**4
-m = MetropolisHasting(example,[0,1])
 
-samples = m.sampler([0],100000,20000)
-print("mean")
-print(np.mean(samples))
-print("variance")
-print(np.var(samples))
+
